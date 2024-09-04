@@ -10,6 +10,16 @@ export const Overlay = styled(Dialog.Overlay)`
 
     background-color: rgba(0, 0, 0, 0.75);
 
+    animation: overlayShow 250ms cubic-bezier(0.16, 1, 0.3, 1);
+
+    @keyframes overlayShow {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 `
 
 export const Content = styled(Dialog.Content)`
@@ -66,6 +76,19 @@ export const Content = styled(Dialog.Content)`
             &:hover {
                 background-color: ${props => props.theme["green-700"]};
             }
+        }
+    }
+
+    animation: contentShow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+    @keyframes contentShow {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -48%) scale(0.96);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
         }
     }
 `
