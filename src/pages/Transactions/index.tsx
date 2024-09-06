@@ -1,12 +1,16 @@
-import { useTransactions } from "../../contexts/TransactionsContext";
+import { useContext } from "react";
+
 import { SearchForm } from "./SearchForm";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
-import { PriceHighlight, TransactionContainer, TransactionTable } from "./styles";
+
+import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
+import { PriceHighlight, TransactionContainer, TransactionTable } from "./styles";
+
 export function Transactions() {
-    const { transactions } = useTransactions();
+    const { transactions } = useContext(TransactionsContext);
 
     return (
         <div>
