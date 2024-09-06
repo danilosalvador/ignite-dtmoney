@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { SearchForm } from "./SearchForm";
+import { SearchForm } from "./components/SearchForm";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 
