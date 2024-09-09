@@ -1,20 +1,44 @@
 {
-    "transactions": [
-        {
-            "id": 1,
-            "description": "Desenvolvimento de site",
-            "type": "income",
-            "category": "Projeto",
-            "price": 18600,
-            "createdAt": "2024-11-20T19:45:44.000Z"
-        },
-        {
-            "id": 2,
-            "description": "Hamburger",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 59.90,
-            "createdAt": "2024-11-20T14:00:18.000Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Projeto",
+      "price": 18600,
+      "createdAt": "2024-11-20T19:45:44.000Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 59.9,
+      "createdAt": "2024-11-20T14:00:18.000Z"
+    },
+    {
+      "description": "Desenvolvimento App",
+      "price": 22000,
+      "category": "Desenvolvimento",
+      "type": "income",
+      "createdAt": "2024-09-09T19:12:18.100Z",
+      "id": 3
+    },
+    {
+      "description": "Pizza",
+      "price": 90,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-09-09T19:14:44.876Z",
+      "id": 4
+    },
+    {
+      "description": "Pastel",
+      "price": 60,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-09-09T19:35:03.702Z",
+      "id": 5
+    }
+  ]
 }
