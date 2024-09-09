@@ -86,12 +86,10 @@ export function NewTransactionModal() {
                         )}
                     />
 
-
                     <button type="submit" disabled={isSubmitting}>
                         Cadastrar
                     </button>
                 </form>
-
             </Content>
         </Dialog.Portal>
     );
